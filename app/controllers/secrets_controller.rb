@@ -29,7 +29,7 @@ class SecretsController < ApplicationController
 		if @secret.save
 			redirect_to root_path, notice: "Succesfully created new Secret"
 		else
-			redirect_to root_path, notice: "Megisto 1000 chars"
+			redirect_to root_path, notice: "Μέγιστο 1000 χαρακτήρες"
 		end
 
 	end
@@ -53,11 +53,13 @@ class SecretsController < ApplicationController
 	private
 
 	def secrets_params
-		params.require(:secret).permit(:title, :sxoleio_id)
+		params.require(:secret).permit(:title, :sxoleio_id, :description)
 	end
 
 	def find_secret
 		@secret = Secret.find(params[:id])
+		@comments = @secret.comments.all
+		@comment = @secret.comments.build
 	end
 
 end

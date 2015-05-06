@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150421095326) do
+ActiveRecord::Schema.define(version: 20150505141425) do
+
+  create_table "comments", force: :cascade do |t|
+    t.text     "sxolio"
+    t.integer  "secret_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "secrets", force: :cascade do |t|
     t.string   "title"
