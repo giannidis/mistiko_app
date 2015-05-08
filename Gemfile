@@ -13,6 +13,8 @@ gem 'will_paginate-bootstrap', '~> 1.0.1'
 gem 'better_errors', '~> 2.1.1'
 gem 'select2-rails'
 gem 'jquery-rails'
+
+gem 'contact_us', '~> 1.0.1'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
