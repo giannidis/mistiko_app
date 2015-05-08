@@ -16,5 +16,6 @@
 //= require turbolinks
 //= require select2
 //= require select2_locale_el
+//= require_tree .
 
 
