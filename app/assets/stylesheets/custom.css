@@ -244,7 +244,9 @@ header .btn-default:focus,
 	background-color: #171B24;
 	color: #FC4349;
 }
-
+.fb_iframe_widget{
+	margin-left: -45px;
+}
 /*Main Content*/
 .main-content h3{
 	font-family: 'Open Sans', sans-serif;
