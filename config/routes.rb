@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   resources :posts
   
   root 'secrets#new'
+
+  map.sitemap '/sitemap.xml', :controller => 'sitemap'
 end
