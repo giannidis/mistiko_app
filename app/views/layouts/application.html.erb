@@ -4,7 +4,11 @@
   <meta name="google-site-verification" content="dZ8Tt0P6VaXyW_QfBBA7UntWpoX-jxu-Pj2mSa-ERYM" />
   <%= render 'layouts/footer' %>
   <title>Ανομολόγητα</title>
-  <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "anomologita - Όλα τα ανομολόγητα στο ΤΕΙ " %>">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "anomologita - Όλα τα ανομολόγητα στο ΤΕΙ " %>">
+    <meta name="keywords" content="anomologita, Ανομολόγητα, ανομολογητα, ανομολογητα τει">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
